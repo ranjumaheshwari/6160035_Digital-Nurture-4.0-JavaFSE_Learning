@@ -1,0 +1,27 @@
+#  Financial Forecasting – Recursive Growth Predictor
+
+**Developed as part of Digital Nurture 4.0 Java FSE**
+
+##  Project Goal
+
+Build a financial forecasting tool using **recursive algorithms** to predict future investment values based on fixed or fluctuating annual growth rates.
+
+##  Structure
+
+- `FinancialForecast.java` – Contains recursive methods for fixed and variable rate forecasting  
+- `ForecastTest.java` – Tests the forecasting logic and prints year-by-year projections  
+
+## 💻 How to Compile & Run
+
+Open terminal in the project folder and run:
+
+```bash
+javac FinancialForecast.java ForecastTest.java
+java ForecastTest
+
+## 🧠 Key Concepts Covered
+
+- **Recursion** as a method of simplifying complex repetitive calculations  
+- **Forecast modeling** using fixed and variable growth rates  
+- **Linear recursive time complexity:** O(n)  
+- **Optimization ideas:** iterative replacement, math functions like `Math.pow`, memoization
