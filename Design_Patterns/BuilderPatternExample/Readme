@@ -1,36 +1,20 @@
-#  Factory Method Pattern – Document Management System
+# 🧱 Builder Pattern – Computer Configuration System
 
 **Developed as part of Digital Nurture 4.0 Java FSE**
 
-##  Project Goal
+## 🎯 Project Goal
 
-Implement the Factory Method design pattern to generate different types of documents (Word, PDF, Excel) using a centralized object creation mechanism.
+Demonstrate the use of the **Builder Design Pattern** to construct complex objects (like a Computer) with optional and required components in a clean and scalable way.
 
-##  Structure
+## 📁 Structure
 
-- `Document.java` – Interface defining the base document behavior  
-- `WordDocument.java`, `PdfDocument.java`, `ExcelDocument.java` – Concrete document classes  
-- `DocumentFactory.java` – Abstract factory class  
-- `WordDocumentFactory.java`, `PdfDocumentFactory.java`, `ExcelDocumentFactory.java` – Concrete factories  
-- `FactoryTest.java` – Main class to test all document factories
+- `Computer.java` – Product class with static nested `Builder` class to manage object construction  
+- `ComputerBuilderTest.java` – Tests different configurations of `Computer` using the builder pattern
 
 ## 💻 How to Compile & Run
 
 Open terminal in the project folder and run:
 
 ```bash
-javac *.java
-java FactoryTest
-
-
-Expected Output:
-Opening a Word document.
-Opening a PDF document.
-Opening an Excel document.
-
-
-Key Concepts Covered:
-- Object-oriented interfaces and abstraction
-- Encapsulation of object creation logic
-- Scalability and separation of concerns via Factory Method pattern
-
+javac Computer.java ComputerBuilderTest.java
+java ComputerBuilderTest
