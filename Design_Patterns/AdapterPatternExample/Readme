@@ -1,0 +1,24 @@
+# 🔌 Adapter Pattern – Payment Gateway Integration
+
+**Developed as part of Digital Nurture 4.0 Java FSE**
+
+## 🎯 Project Goal
+
+Implement the **Adapter Design Pattern** to integrate multiple third-party payment gateways (e.g., PayPal, Stripe) that have incompatible interfaces into a single, unified `PaymentProcessor` interface.
+
+## 📁 Structure
+
+- `PaymentProcessor.java` - Target interface with a standard `processPayment()` method  
+- `PayPalGateway.java` - Third-party class with `sendPayment()`  
+- `StripeGateway.java` - Third-party class with `makePayment()`  
+- `PayPalAdapter.java` - Adapter for `PayPalGateway` to implement `PaymentProcessor`  
+- `StripeAdapter.java` - Adapter for `StripeGateway` to implement `PaymentProcessor`  
+- `PaymentTest.java` - Demonstrates processing payments via both adapters
+
+## 💻 How to Compile & Run
+
+In terminal, inside the project folder:
+
+```bash
+javac *.java
+java PaymentTest
