@@ -1,0 +1,24 @@
+# 📈 Observer Pattern – Stock Market Notification System
+
+**Developed as part of Digital Nurture 4.0 Java FSE**
+
+## 🎯 Project Goal
+
+Implement the **Observer Design Pattern** to simulate a real-time stock market where multiple clients (observers) are automatically notified when stock prices change.
+
+## 📁 Structure
+
+- `Stock.java` - Subject interface for registering, removing, and notifying observers  
+- `StockMarket.java` - Concrete subject that holds stock data and notifies observers  
+- `Observer.java` - Interface for all observer clients  
+- `MobileApp.java` - Observer implementation representing a mobile client  
+- `WebApp.java` - Observer implementation representing a web client  
+- `StockAppTest.java` - Test class to demonstrate stock price notifications
+
+## 💻 How to Compile & Run
+
+In terminal, inside the project folder:
+
+```bash
+javac *.java
+java StockAppTest
