@@ -1,0 +1,38 @@
+# Singleton Pattern Example – Logger Utility in Java
+
+This project demonstrates the **Singleton Design Pattern** using a `Logger` utility class in Java. It is part of my learning journey in the *Digital Nurture 4.0 Java FSE* program, where I explored design patterns and software craftsmanship.
+
+## What Is the Singleton Pattern?
+
+The Singleton Pattern ensures that a class has **only one instance** throughout the application's lifecycle and provides a **global point of access** to it. It is commonly used in logging, configuration, caching, and managing shared resources.
+
+## What This Project Does
+
+- Implements a singleton `Logger` class  
+- Uses a private constructor to restrict multiple object creation  
+- Provides a static `getInstance()` method for accessing the instance  
+- Demonstrates that all references point to the same object
+
+## How to Compile and Run
+
+Make sure you are in the root directory containing the `Design_Patterns` folder.
+
+**To Compile and Run:**
+
+javac Design_Patterns/SingletonPatternExample/*.java
+
+java Design_Patterns.SingletonPatternExample.LoggerTest 
+
+
+##  Expected Output
+Logger Initialized
+Log: This is the first log message.
+Log: This is the second log message.
+Only one instance of Logger is used.
+
+
+##  Project Structure
+Design_Patterns/
+└── SingletonPatternExample/
+    ├── Logger.java
+    └── LoggerTest.java

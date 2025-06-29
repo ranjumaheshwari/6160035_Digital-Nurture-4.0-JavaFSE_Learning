@@ -1,0 +1,22 @@
+# 🖼️ Proxy Pattern – Lazy Image Viewer
+
+**Developed as part of Digital Nurture 4.0 Java FSE**
+
+## 🎯 Project Goal
+
+Use the **Proxy Design Pattern** to implement lazy loading and caching in an image viewer system. This simulates loading remote images only when necessary, improving performance and resource management.
+
+## 📁 Structure
+
+- `Image.java` – Interface with a `display()` method  
+- `RealImage.java` – Loads an image from a remote server and displays it  
+- `ProxyImage.java` – Acts as a placeholder and only loads the real image on first access  
+- `ImageViewerTest.java` – Demonstrates how ProxyImage handles loading and reusing images
+
+## 💻 How to Compile & Run
+
+In terminal, inside the project folder:
+
+```bash
+javac *.java
+java ImageViewerTest
